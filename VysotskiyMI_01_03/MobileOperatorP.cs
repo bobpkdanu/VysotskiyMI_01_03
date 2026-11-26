@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace VysotskiyMI_01_03
 {
-    class MobileOperatorP:MobileOperator
+    class MobileOperatorP:MobileOperator //Класс наследник, от MobileOperator
     {
         public double Qp;
 
-        public double QPFunc(bool p)
+        public double QPFunc(bool p)//Функция для вычисления Qp
         {
             if (p == true)
             {
