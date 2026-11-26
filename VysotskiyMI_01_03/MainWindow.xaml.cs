@@ -1,4 +1,4 @@
-﻿using System;
+/﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,12 +55,12 @@ namespace VysotskiyMI_01_03
                     }
                 }
 
-                mob.Qfunc(nameText.Text, double.Parse(priceText.Text), double.Parse(ploshText.Text));
+                mob.Qfunc(nameText.Text, double.Parse(priceText.Text), double.Parse(ploshText.Text));//Вызов функции для вычисления Q
                 QText.Text = $"Q оператора: {mob.operQ.ToString()}";
 
                 bool checkP;
 
-                if ((bool)checkPay.IsChecked)
+                if ((bool)checkPay.IsChecked)//Проверка checkBox, для вычисления Qp
                 {
                     checkP = true;
                     mob.QPFunc(checkP);
