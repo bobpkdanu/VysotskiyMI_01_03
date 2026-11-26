@@ -27,17 +27,17 @@ namespace VysotskiyMI_01_03
 
         MobileOperatorP mob = new MobileOperatorP();
 
-        private void addBtn_Click(object sender, RoutedEventArgs e)
+        private void addBtn_Click(object sender, RoutedEventArgs e)//События при нажатии кнопки
         {
             try
             {
-                if (nameText.Text == "" || priceText.Text == "" || ploshText.Text == "")
+                if (nameText.Text == "" || priceText.Text == "" || ploshText.Text == "")//Проверка на пустоту
                 {
                     MessageBox.Show("Обнаружены пустые поля");
                     return;
                 }
 
-                foreach (char ch in priceText.Text)
+                foreach (char ch in priceText.Text)//Проверка на числа
                 {
                     if (!char.IsDigit(ch))
                     {
