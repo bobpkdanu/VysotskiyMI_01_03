@@ -13,7 +13,7 @@ namespace VysotskiyMI_01_03
         public double operPlosh;
         public double operQ;
 
-        public double Qfunc(string name, double minute, double plosh)
+        public double Qfunc(string name, double minute, double plosh)//Функция для вычисления Q оператора
         {
             operName = name;
             operMinute = minute;
